@@ -22,6 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	color: rgb(236, 236, 236);
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -30,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	background-color: rgb(22, 22, 22);
 }
 ol, ul {
 	list-style: none;
@@ -55,4 +57,14 @@ table {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+
+h2 {
+	width: 100%;
+	font-size: 1.5rem;
+	margin: 5%;
 }
