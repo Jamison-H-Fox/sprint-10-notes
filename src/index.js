@@ -2,16 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import { legacy_createStore as createStore } from "redux";
-import { Provider } from "react-redux";
 
-function reducer() {
-  return {
-    
-  }
-}
+import { legacy_createStore as createStore, applyMiddleware } from 'redux';
+import { Provider } from 'react-redux';
+import logger from 'redux-logger';
+import thunk from 'redux-thunk';
 
-const store = createStore(reducer);
+import reducer from './reducers';
+
+const store = createStore(reducer, applyMiddleware(thunk));
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
